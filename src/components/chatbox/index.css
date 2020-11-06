@@ -1,0 +1,94 @@
+.editchatbody {
+    width: 306px;
+    position: fixed;
+    right: 2%;
+    bottom: 0;
+    z-index: 999;
+    border: 1px solid #80808070;
+    height: 350px;
+    border-radius: 7px;
+    background: #a099991f;
+}
+.chat-body {
+    overflow-y: scroll;
+    height: 300px;
+}
+.send-message {
+    position: absolute;
+    bottom: 0;
+}
+ul.chat-message li.left .chat-item {
+    background: rgba(141,198,63, .1) ;
+    margin-left: 50px !important;
+    padding: 5px 10px;
+    position: relative;
+    border-radius: 10px;
+}
+ul.chat-message li.right .chat-item {
+    background: rgba(39,170,225, .1);
+    margin-right: 50px;
+    padding: 5px 10px;
+    position: relative;
+    border-radius: 10px;
+}
+ul.chat-message li{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    list-style: none;
+}
+ul.chat-message li.left .chat-item::before {
+    border-bottom: 10px solid transparent;
+    border-right: 8px solid rgba(141,198,63, .1);
+    border-top: 10px solid transparent;
+    content: "";
+    height: 0;
+    left: -8px;
+    position: absolute;
+    top: 10px;
+    width: 0;
+}
+ul.chat-message li.right .chat-item::after {
+    border-bottom: 10px solid transparent;
+    border-left: 8px solid rgba(39,170,225, .1);
+    border-top: 10px solid transparent;
+    content: "";
+    height: 0;
+    right: -8px;
+    position: absolute;
+    top: 10px;
+    width: 0;
+}
+ul.chat-message li.right .chat-item .chat-item-header {
+    border-bottom: 1px dotted #bce8f7;
+    margin-bottom: 10px;
+}
+ul.chat-message li.left .chat-item .chat-item-header {
+    border-bottom: 1px dotted #caef8e;
+    margin-bottom: 10px;
+}
+ul.chat-message li .chat-item .chat-item-header small {
+    position: absolute;
+    top: 4px;
+    right: 20px;
+}
+.chat-item-header {
+    height: 30px;
+}
+.chat-item-header h5 {
+    float: left;
+}
+
+small.text-muted {
+    float: right;
+}
+img.profile-photo-sm {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.editclose a i {
+    padding-left: 281px;
+    font-size: 22px;
+}
+
